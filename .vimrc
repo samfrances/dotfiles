@@ -4,9 +4,17 @@
 " Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
 call plug#begin('~/.vim/plugged')
 
+"All from github"
+
 Plug 'vim-scripts/indentpython.vim'
 
 Plug 'sickill/vim-monokai'
+
+Plug 'pangloss/vim-javascript'
+
+Plug 'Raimondi/delimitMate'
+
+Plug 'wlangstroth/vim-racket'
 
 " Initialize plugin system
 call plug#end()
