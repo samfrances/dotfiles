@@ -14,11 +14,13 @@ Plug 'sheerun/vim-polyglot'
 
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
 
-"Plug 'Raimondi/delimitMate'
-
 Plug 'jiangmiao/auto-pairs'
 
 Plug 'wlangstroth/vim-racket'
+
+Plug 'vim-airline/vim-airline'
+
+Plug 'tpope/vim-fugitive'
 
 " Initialize plugin system
 call plug#end()
@@ -48,3 +50,12 @@ if !exists("g:syntax_on")
     syntax enable
 endif
 colorscheme monokai
+
+" Autostrip trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
+
+
+" Settings for airlines plugin
+set laststatus=2        " Necessary for vim-airline plugin
+let g:airline#extensions#tabline#enabled = 1    " Better tabline
+let g:airline_powerline_fonts = 1
