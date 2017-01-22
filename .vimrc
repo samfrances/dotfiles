@@ -10,9 +10,13 @@ Plug 'vim-scripts/indentpython.vim'
 
 Plug 'sickill/vim-monokai'
 
-Plug 'pangloss/vim-javascript'
+Plug 'sheerun/vim-polyglot'
 
-Plug 'Raimondi/delimitMate'
+Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
+
+"Plug 'Raimondi/delimitMate'
+
+Plug 'jiangmiao/auto-pairs'
 
 Plug 'wlangstroth/vim-racket'
 
