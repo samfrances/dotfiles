@@ -1,3 +1,19 @@
+" Vim-plug section
+" See https://github.com/junegunn/vim-plug
+
+" Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
+call plug#begin('~/.vim/plugged')
+
+Plug 'vim-scripts/indentpython.vim'
+
+Plug 'sickill/vim-monokai'
+
+" Initialize plugin system
+call plug#end()
+
+" END Vim-plug section
+
+
 set expandtab           " enter spaces when tab is pressed
 set textwidth=120       " break lines when line length increases
 set tabstop=4           " use 4 spaces to represent tab
