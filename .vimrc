@@ -49,13 +49,15 @@ set showcmd                     " show (partial) command in status line
 if !exists("g:syntax_on")
     syntax enable
 endif
+set t_Co=256
 colorscheme monokai
 
 " Autostrip trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-
-" Settings for airlines plugin
+" settings for airlines plugin
 set laststatus=2        " Necessary for vim-airline plugin
+set encoding=utf-8
 let g:airline#extensions#tabline#enabled = 1    " Better tabline
 let g:airline_powerline_fonts = 1
+set guifont=DejaVu_Sans_Mono_for_Powerline:h10
