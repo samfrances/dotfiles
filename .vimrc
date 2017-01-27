@@ -35,6 +35,7 @@ set softtabstop=4
 set shiftwidth=4        " number of spaces to use for auto indent
 set autoindent          " copy indent from current line when starting a new line
 set breakindent		    " Smart wrap http://stackoverflow.com/questions/1204149/smart-wrap-in-vim
+set autochdir
 
 " make backspaces more powerfull
 set backspace=indent,eol,start
@@ -49,15 +50,13 @@ set showcmd                     " show (partial) command in status line
 if !exists("g:syntax_on")
     syntax enable
 endif
-set t_Co=256
 colorscheme monokai
 
 " Autostrip trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-" settings for airlines plugin
+
+" Settings for airlines plugin
 set laststatus=2        " Necessary for vim-airline plugin
-set encoding=utf-8
 let g:airline#extensions#tabline#enabled = 1    " Better tabline
 let g:airline_powerline_fonts = 1
-set guifont=DejaVu_Sans_Mono_for_Powerline:h10
