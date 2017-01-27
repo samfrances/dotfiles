@@ -60,3 +60,5 @@ autocmd BufWritePre * :%s/\s\+$//e
 set laststatus=2        " Necessary for vim-airline plugin
 let g:airline#extensions#tabline#enabled = 1    " Better tabline
 let g:airline_powerline_fonts = 1
+set encoding=utf-8
+set guifont=DejaVu_Sans_Mono_for_Powerline:h11:cANSI:qDRAFT
