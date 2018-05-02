@@ -10,3 +10,14 @@ sudo apt-get install powerline
 ```
 
 See: https://github.com/junegunn/vim-plug
+
+Git
+---
+
+The git config file assumes that there is a file `.signing.gitconfig.inc` with
+contents like the following:
+
+```
+[user]
+        signingkey = <key id>
+```
