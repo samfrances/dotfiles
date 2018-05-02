@@ -1,0 +1,40 @@
+# CUSTOM PROMPT
+
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+# disable the default virtualenv prompt change
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
+# Display active Python virtualenv details.
+virtualenv_path() {
+    if test -z "$VIRTUAL_ENV" ; then
+        printf ""
+    else
+        printf "($VIRTUAL_ENV) "
+    fi
+}
+
+# Optional newline
+# Insert a newline before the line with virtualenv and git info, iff the line is present
+optional_prompt_newline() {
+    if [ -z "$VIRTUAL_ENV" ] && [ -z "$(parse_git_branch)" ]; then
+        printf ""
+    else
+       printf "\n\0"
+    fi
+}
+
+
+# Set the full bash prompt.
+set_bash_prompt() {
+    optional_prompt_newline
+
+    PS1="\$(optional_prompt_newline)\[\033[95m\]\$(virtualenv_path)\[\033[93m\]\$(parse_git_branch)\[\033[00m\] \n\[\033[96m\]\u \[\033[92m\]\w \[\033[97m\]\n$\[\033[0m\] "
+
+}
+
+# Tell bash to execute this function just before displaying its prompt.
+PROMPT_COMMAND=set_bash_prompt
+
