@@ -1,9 +1,6 @@
-[user]
-	name = Sam Frances
-	email = sam@samfrances.uk
-
 [include]
-	path = ~/.signing.gitconfig.inc
+    # Should include user.name, user.email, user.signingkey
+	path = ~/.gitconfig.local
 
 [alias]
 	lg = log --graph --abbrev-commit --decorate --oneline --color
