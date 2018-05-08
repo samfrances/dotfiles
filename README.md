@@ -14,10 +14,12 @@ See: https://github.com/junegunn/vim-plug
 Git
 ---
 
-The git config file assumes that there is a file `.signing.gitconfig.inc` with
+The git config file assumes that there is a file `.gitconfig.local` with
 contents like the following:
 
 ```
 [user]
+	name = <name>
+	email = <email>
         signingkey = <key id>
 ```
