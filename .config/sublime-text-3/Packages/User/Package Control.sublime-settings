@@ -1,0 +1,29 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AppendSemiColon",
+		"Babel",
+		"DocBlockr",
+		"Elixir",
+		"lispindent",
+		"Markdown Preview",
+		"nginx",
+		"Package Control",
+		"PowerShell",
+		"Pretty JSON",
+		"Print to HTML",
+		"Protocol Buffer Syntax",
+		"Racket",
+		"SCSS",
+		"SublimeLinter",
+		"SublimeLinter-eslint",
+		"SublimeLinter-flake8",
+		"SublimeLinter-tslint",
+		"Terminal",
+		"TypeScript"
+	]
+}
