@@ -7,3 +7,4 @@ alias randref='openssl rand -base64 32 | sha256sum | cut -c -64'
 # pipe output to this to get it into clipboard
 alias clipit='xclip -selection c'
 
+alias yaml2json="cat fruits.yml | python -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin), sys.stdout)' | jq '.'"
