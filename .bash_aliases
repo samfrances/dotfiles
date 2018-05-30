@@ -12,3 +12,9 @@ alias yaml2json="python -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdi
 
 # Strip newline from output
 alias strip_newline='tr -d "\n"'
+
+# Seconds since epoch
+alias epoch="python -c 'import time; print int(time.time())'"
+
+# Seconds since epoch as a float
+alias epochf="python -c 'import time; print time.time()'"
