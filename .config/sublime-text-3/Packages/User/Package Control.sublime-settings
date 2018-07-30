@@ -9,6 +9,7 @@
 		"Babel",
 		"DocBlockr",
 		"Elixir",
+		"INI",
 		"lispindent",
 		"MarkdownPreview",
 		"nginx",
@@ -24,6 +25,7 @@
 		"SublimeLinter-flake8",
 		"SublimeLinter-tslint",
 		"Terminal",
+		"TOML",
 		"TypeScript"
 	]
 }

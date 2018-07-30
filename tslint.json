@@ -1,0 +1,17 @@
+{
+  "extends": ["tslint:recommended"],
+  "rules": {
+    "interface-name": false,
+    "only-arrow-functions": false,
+    "quotemark": false,
+    "arrow-parens": false,
+    "no-empty-interface": false,
+    "member-access": [true, "no-public"]
+  },
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts"
+    ]
+  }
+}

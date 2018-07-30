@@ -1,0 +1,11 @@
+// SublimeLinter Settings - User
+{
+    "linters": {
+        "tslint": {
+            "@disable": false,
+            "args": [],
+            "config_filename": "$HOME/tslint.json",
+            "excludes": []
+        }
+    }
+}
