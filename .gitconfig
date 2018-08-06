@@ -6,6 +6,7 @@
 	lg = log --graph --abbrev-commit --decorate --oneline --color
 	c = commit
 	m = merge
+	unstage = reset --
 
 [commit]
 	gpgsign = true
