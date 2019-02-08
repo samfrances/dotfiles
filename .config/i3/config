@@ -212,4 +212,4 @@ assign [class="Thunderbird"] $ws20
 # Startup applications
 exec --no-startup-id slack
 exec --no-startup-id thunderbird
-exec gnome-terminal
+exec --no-startup-id nm-applet
