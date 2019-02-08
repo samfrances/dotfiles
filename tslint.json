@@ -6,7 +6,8 @@
     "quotemark": false,
     "arrow-parens": false,
     "no-empty-interface": false,
-    "member-access": [true, "no-public"]
+    "member-access": [true, "no-public"],
+    "variable-name": false
   },
   "linterOptions": {
     "exclude": [
