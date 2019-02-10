@@ -213,6 +213,7 @@ assign [class="Thunderbird"] $ws20
 exec --no-startup-id slack
 exec --no-startup-id thunderbird
 exec --no-startup-id nm-applet
+exec --no-startup-d pnmixer
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound volume
