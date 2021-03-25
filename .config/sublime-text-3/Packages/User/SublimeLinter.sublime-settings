@@ -6,6 +6,9 @@
             "args": [],
             "config_filename": "$HOME/tslint.json",
             "excludes": []
+        },
+        "eslint": {
+            "selector": "source.js, source.ts"
         }
     }
 }

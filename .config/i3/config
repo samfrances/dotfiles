@@ -223,3 +223,6 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 # Set up mouse tap to click
 # See: https://www.reddit.com/r/i3wm/comments/516e8c/tap_to_click_touchpad/
 exec xinput set-prop 12 279 1
+
+# Set background image
+exec --no-startup-id feh --bg-fill /usr/share/lubuntu/wallpapers/1604-lubuntu-default-wallpaper.png
