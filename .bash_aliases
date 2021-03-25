@@ -18,3 +18,7 @@ alias epoch="python -c 'import time; print int(time.time())'"
 
 # Seconds since epoch as a float
 alias epochf="python -c 'import time; print time.time()'"
+
+alias bell="pacmd play-file /usr/share/sounds/gnome/default/alerts/glass.ogg 1 > /dev/null"
+
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"; bell'
