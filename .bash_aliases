@@ -1,4 +1,4 @@
-# Delete this very line of bash history
+# Delete the previous command of bash history
 alias history_scrub_last='history -d $((HISTCMD-2))'
 
 # Random hashbin ref generator
