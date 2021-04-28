@@ -26,12 +26,15 @@ optional_prompt_newline() {
     fi
 }
 
+show_current_time() {
+    echo -n "[$(date +%H:%M:%S)]"
+}
 
 # Set the full bash prompt.
 set_bash_prompt() {
     optional_prompt_newline
 
-    PS1="$(optional_prompt_newline)\[\033[95m\]$(virtualenv_path)\[\033[93m\]$(parse_git_branch)\[\033[00m\] \n\[\033[96m\]\u \[\033[92m\]\w \[\033[97m\]\n$\[\033[0m\] "
+    PS1="$(optional_prompt_newline)\[\033[95m\]$(virtualenv_path)\[\033[93m\]$(parse_git_branch)\[\033[00m\] \n$(show_current_time) \[\033[96m\]\u \[\033[92m\]\w \[\033[97m\]\n$\[\033[0m\] "
 
 }
 
