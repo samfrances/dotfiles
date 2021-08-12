@@ -28,3 +28,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # Run ssh with specified key, without trying multiple other keys from keyring.
 # See: https://serverfault.com/a/989684
 alias ssh_with_key='ssh -o "IdentitiesOnly yes" -i'
+
+# Delete all docker containers
+docker-delete-containers() { docker rm -f $(docker container ls -aq); }
